@@ -4,9 +4,16 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+/**
+ * A controller that says hello. This is a sample Javadoc.
+ */
 @Controller
 public class SayHelloController {
 
+    /**
+     *
+     * @return Simple string that says "Hello"
+     */
     @RequestMapping("say-hello")
     @ResponseBody
     public String sayHello(){

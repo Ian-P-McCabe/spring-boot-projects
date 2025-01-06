@@ -5,8 +5,32 @@ import jakarta.validation.constraints.Size;
 
 import java.time.LocalDate;
 
+/**
+ * Represents a Todo object
+ *
+ * <p>
+ *     The service processes Todo objects with the following steps
+ * </p>
+ *
+ * <ol>
+ *     <li> Generate Todo</li>
+ *     <li>Store Todo in the DB</li>
+ *     <li>Fetch all other Todo objects</li>
+ *     <li>
+ *         <p>This todo has a paragraph</p>
+ *     </li>
+ * </ol>
+ */
 public class Todo {
 
+    /**
+     * Initializes a Todo object
+     * @param id
+     * @param username
+     * @param description
+     * @param targetDate
+     * @param done
+     */
     public Todo(int id, String username, String description, LocalDate targetDate, boolean done) {
         this.id = id;
         this.username = username;
